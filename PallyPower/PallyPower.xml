@@ -507,22 +507,22 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
   </Button>
 
   <Button name="PlayerButtonTemplate" hidden="false" virtual="true" movable="false">
-  <Size>
-  <AbsDimension x="84" y="13" /> 
-  </Size>
-  <Layers>
-  <Layer level="OVERLAY">
+    <Size>
+      <AbsDimension x="84" y="13" /> 
+    </Size>
+    <Layers>
+    <Layer level="OVERLAY">
 	  <FontString name="$parentText" inherits="GameFontHighlightSmall" text="PlayerButton" justifyH="LEFT">
-		  <Size>
-			  <AbsDimension x="80" y="13" />
-		  </Size>
-		  <Anchors>
-			  <Anchor point="LEFT">
-				  <Offset>
-					  <AbsDimension x="0" y="0" />
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
+	  <Size>
+	    <AbsDimension x="80" y="13" />
+	  </Size>
+	  <Anchors>
+		  <Anchor point="LEFT">
+			  <Offset>
+				  <AbsDimension x="0" y="0" />
+			  </Offset>
+		  </Anchor>
+	    </Anchors>
 	  </FontString>
 	  <Texture name="$parentIcon" file="Interface\Icons\Spell_Holy_SealOfWisdom">
 		  <Size>
@@ -536,7 +536,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			  </Anchor>
 		  </Anchors>
 	  </Texture>
-  </Layer>
+    </Layer>
   </Layers>
   <Scripts>
   <OnLoad>
@@ -1001,115 +1001,115 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				    </Anchor>
 			    </Anchors>
 		    </Texture>
-        <Texture file="Interface\Icons\Spell_Magic_MageArmor" name="$parentIcon5">
-          <Size>
-            <AbsDimension x="16" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentIcon4">
-              <Offset>
-                <AbsDimension x="45" y="-0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture file="Interface\Icons\Spell_Nature_LightningShield" name="$parentIcon6">
-          <Size>
-            <AbsDimension x="16" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentIcon5">
-              <Offset>
-                <AbsDimension x="45" y="0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture file="Interface\Icons\Spell_Holy_DevotionAura" name="$parentAIcon1">
-          <Size>
-            <AbsDimension x="16" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT">
-              <Offset>
-                <AbsDimension x="0" y="-56" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture file="Interface\Icons\Spell_Holy_AuraofLight" name="$parentAIcon2">
-          <Size>
-            <AbsDimension x="16" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentAIcon1">
-              <Offset>
-                <AbsDimension x="45" y="0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture file="Interface\Icons\Spell_Holy_MindSooth" name="$parentAIcon3">
-          <Size>
-            <AbsDimension x="16" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentAIcon2">
-              <Offset>
-                <AbsDimension x="45" y="0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture name="$parentLine1" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-        <Size>
-          <AbsDimension x="1150" y="2" /> 
-        </Size>
-        <Anchors>
-          <Anchor point="TOPLEFT">
-            <Offset>
-              <AbsDimension x="0" y="2" /> 
-            </Offset>
-          </Anchor>
-        </Anchors>
-        </Texture>
-	      <Texture name="$parentLine2" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT">
-				      <Offset>
-					      <AbsDimension x="128" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine3" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine2">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine4" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine3">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-        <Texture name="$parentLine5" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+			<Texture file="Interface\Icons\Spell_Holy_GreaterBlessingofSalvation" name="$parentIcon5">
+			    <Size>
+				    <AbsDimension x="16" y="16" /> 
+			    </Size>
+			    <Anchors>
+				    <Anchor point="TOPLEFT" relativeTo="$parentIcon4">
+					    <Offset>
+						    <AbsDimension x="45" y="0" /> 
+					    </Offset>
+				    </Anchor>
+			    </Anchors>
+		    </Texture>
+			<Texture file="Interface\Icons\Spell_Holy_MindVision" name="$parentIcon6">
+			    <Size>
+				    <AbsDimension x="16" y="16" /> 
+			    </Size>
+			    <Anchors>
+				    <Anchor point="TOPLEFT" relativeTo="$parentIcon5">
+					    <Offset>
+						    <AbsDimension x="45" y="0" /> 
+					    </Offset>
+				    </Anchor>
+			    </Anchors>
+		    </Texture>
+			<Texture file="Interface\Icons\Spell_Holy_DevotionAura" name="$parentAIcon1">
+			<Size>
+				<AbsDimension x="16" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT">
+				<Offset>
+					<AbsDimension x="0" y="-56" />
+				</Offset>
+				</Anchor>
+			</Anchors>
+			</Texture>
+			<Texture file="Interface\Icons\Spell_Holy_AuraofLight" name="$parentAIcon2">
+			<Size>
+				<AbsDimension x="16" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentAIcon1">
+				<Offset>
+					<AbsDimension x="45" y="0" />
+				</Offset>
+				</Anchor>
+			</Anchors>
+			</Texture>
+			<Texture file="Interface\Icons\Spell_Holy_MindSooth" name="$parentAIcon3">
+			<Size>
+				<AbsDimension x="16" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentAIcon2">
+				<Offset>
+					<AbsDimension x="45" y="0" />
+				</Offset>
+				</Anchor>
+			</Anchors>
+			</Texture>
+			<Texture name="$parentLine1" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+			<Size>
+			<AbsDimension x="1150" y="2" /> 
+			</Size>
+			<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset>
+				<AbsDimension x="0" y="2" /> 
+				</Offset>
+			</Anchor>
+			</Anchors>
+			</Texture>
+			<Texture name="$parentLine2" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="128" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine3" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine2">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine4" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine3">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine5" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
 	        <Size>
 		        <AbsDimension x="2" y="78" /> 
 	        </Size>
@@ -1120,104 +1120,104 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			        </Offset>
 		        </Anchor>
 	        </Anchors>
-        </Texture>
-	      <Texture name="$parentLine6" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine5">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine7" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine6">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine8" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine7">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine9" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine8">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine10" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine9">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-	      <Texture name="$parentLine11" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-		      <Size>
-			      <AbsDimension x="2" y="78" /> 
-		      </Size>
-		      <Anchors>
-			      <Anchor point="TOPLEFT" relativeTo="$parentLine10">
-				      <Offset>
-					      <AbsDimension x="86" y="0" /> 
-				      </Offset>
-			      </Anchor>
-		      </Anchors>
-	      </Texture>
-        <Texture name="$parentLine12" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-          <Size>
-            <AbsDimension x="2" y="78" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentLine11">
-              <Offset>
-                <AbsDimension x="86" y="0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <Texture name="$parentLine13" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
-         <Size>
-            <AbsDimension x="2" y="78" />
-         </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentLine12">
-              <Offset>
-                <AbsDimension x="86" y="0" />
-              </Offset>
-            </Anchor>
-          </Anchors>
-        </Texture>
-        <FontString name="$parentSkill1" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+        	</Texture>
+			<Texture name="$parentLine6" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine5">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine7" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine6">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine8" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine7">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine9" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine8">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine10" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine9">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine11" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+				<Size>
+					<AbsDimension x="2" y="78" /> 
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentLine10">
+						<Offset>
+							<AbsDimension x="86" y="0" /> 
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentLine12" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+			<Size>
+				<AbsDimension x="2" y="78" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentLine11">
+				<Offset>
+					<AbsDimension x="86" y="0" />
+				</Offset>
+				</Anchor>
+			</Anchors>
+			</Texture>
+			<Texture name="$parentLine13" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
+			<Size>
+				<AbsDimension x="2" y="78" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentLine12">
+				<Offset>
+					<AbsDimension x="86" y="0" />
+				</Offset>
+				</Anchor>
+			</Anchors>
+			</Texture>
+			<FontString name="$parentSkill1" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
 			    <Size>
 				    <AbsDimension x="30" y="16" /> 
 			    </Size>
@@ -1257,60 +1257,60 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				    <Anchor point="TOPLEFT" relativeTo="$parentIcon5" relativePoint="TOPRIGHT" /> 
 			    </Anchors>
 		    </FontString>
-        <FontString name="$parentSkill6" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-          <Size>
-            <AbsDimension x="30" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentIcon6" relativePoint="TOPRIGHT" />
-          </Anchors>
-        </FontString>
-        <FontString name="$parentASkill1" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-          <Size>
-            <AbsDimension x="30" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentAIcon1" relativePoint="TOPRIGHT" />
-          </Anchors>
-        </FontString>
-        <FontString name="$parentASkill2" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-          <Size>
-            <AbsDimension x="30" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentAIcon2" relativePoint="TOPRIGHT" />
-          </Anchors>
-        </FontString>
-        <FontString name="$parentASkill3" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-          <Size>
-            <AbsDimension x="30" y="16" />
-          </Size>
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentAIcon3" relativePoint="TOPRIGHT" />
-          </Anchors>
-        </FontString>
-      </Layer>
-    </Layers>
+			<FontString name="$parentSkill6" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+			<Size>
+				<AbsDimension x="30" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentIcon6" relativePoint="TOPRIGHT" />
+			</Anchors>
+			</FontString>
+			<FontString name="$parentASkill1" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+			<Size>
+				<AbsDimension x="30" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentAIcon1" relativePoint="TOPRIGHT" />
+			</Anchors>
+			</FontString>
+			<FontString name="$parentASkill2" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+			<Size>
+				<AbsDimension x="30" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentAIcon2" relativePoint="TOPRIGHT" />
+			</Anchors>
+			</FontString>
+			<FontString name="$parentASkill3" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+			<Size>
+				<AbsDimension x="30" y="16" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentAIcon3" relativePoint="TOPRIGHT" />
+			</Anchors>
+			</FontString>
+      	</Layer>
+   	</Layers>
     <Frames>
-    <Button name="$parentAura1" inherits="AuraGridButtonTemplate">
-      <Anchors>
-        <Anchor point="TOPLEFT">
-          <Offset>
-            <AbsDimension x="130" y="0" />
-          </Offset>
-        </Anchor>
-      </Anchors>
-    </Button>
-    <Button name="$parentClass1" inherits="BuffGridButtonTemplate">
-      <Anchors>
-        <Anchor point="TOPLEFT" relativeTo="$parentAura1" relativePoint="TOPRIGHT">
-          <Offset>
-            <AbsDimension x="2" y="0" />
-          </Offset>
-        </Anchor>
-      </Anchors>
-    </Button>
-    <Button name="$parentClass2" inherits="BuffGridButtonTemplate">
+		<Button name="$parentAura1" inherits="AuraGridButtonTemplate">
+		<Anchors>
+			<Anchor point="TOPLEFT">
+			<Offset>
+				<AbsDimension x="130" y="0" />
+			</Offset>
+			</Anchor>
+		</Anchors>
+		</Button>
+		<Button name="$parentClass1" inherits="BuffGridButtonTemplate">
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="$parentAura1" relativePoint="TOPRIGHT">
+			<Offset>
+				<AbsDimension x="2" y="0" />
+			</Offset>
+			</Anchor>
+		</Anchors>
+		</Button>
+		<Button name="$parentClass2" inherits="BuffGridButtonTemplate">
 		  <Anchors>
 			  <Anchor point="TOPLEFT" relativeTo="$parentClass1" relativePoint="TOPRIGHT">
 				  <Offset>
@@ -1318,89 +1318,88 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				  </Offset>
 			  </Anchor>
 		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass3" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass2" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass4" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass3" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass5" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass4" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass6" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass5" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass7" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass6" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass8" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass7" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass9" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass8" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass10" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass9" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-	  <Button name="$parentClass11" inherits="BuffGridButtonTemplate">
-		  <Anchors>
-			  <Anchor point="TOPLEFT" relativeTo="$parentClass10" relativePoint="TOPRIGHT">
-				  <Offset>
-					  <AbsDimension x="2" y="0" /> 
-				  </Offset>
-			  </Anchor>
-		  </Anchors>
-	  </Button>
-
+		</Button>
+		<Button name="$parentClass3" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass2" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass4" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass3" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass5" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass4" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass6" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass5" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass7" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass6" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass8" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass7" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass9" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass8" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass10" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass9" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentClass11" inherits="BuffGridButtonTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parentClass10" relativePoint="TOPRIGHT">
+					<Offset>
+						<AbsDimension x="2" y="0" /> 
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
   </Frames>
   </Frame>
 

@@ -425,7 +425,7 @@ function PallyPowerConfigGrid_Update()
 			getglobal(fname .. "Symbols"):SetTextColor(1,1,0.5)
 			
 			-- display the rank/talents for the blessings...
-			for id = 1, 4 do
+			for id = 1, PallyPower.BLESSINGS_COUNT - 1 do
 				if SkillInfo[id] then
 					getglobal(fname.."Icon"..id):Show()
 					getglobal(fname.."Skill"..id):Show()
@@ -438,10 +438,6 @@ function PallyPowerConfigGrid_Update()
 					getglobal(fname.."Icon"..id):Hide()
 					getglobal(fname.."Skill"..id):Hide()
 				end
-			end
-			for id = 5, 6 do
-				getglobal(fname.."Icon"..id):Hide()
-				getglobal(fname.."Skill"..id):Hide()
 			end
 			
 			-- display the rank/talents for only the 3 primary auras (devotion, retribution, concentration)
@@ -518,7 +514,7 @@ function PallyPower:Report(type)
 			local list = {}
 			for name in pairs(AllPallys) do
 				local blessings
-				for i = 1, 4 do
+				for i = 1, PallyPower.BLESSINGS_COUNT - 1 do
 					list[i] = 0
 				end
 				for id = 1, PALLYPOWER_MAXCLASSES do
@@ -527,7 +523,7 @@ function PallyPower:Report(type)
 						list[bid] = list[bid] + 1
 					end
 				end
-				for id = 1, 4 do
+				for id = 1, PallyPower.BLESSINGS_COUNT - 1 do
 					if (list[id] > 0) then
 						if (blessings) then
 							blessings = blessings .. ", "
@@ -864,7 +860,7 @@ function PallyPower:SendSelf()
 
 	local SkillInfo = AllPallys[self.player]
 	s = ""
-	for i = 1, 4 do
+	for i = 1, PallyPower.BLESSINGS_COUNT - 1 do
 		if not SkillInfo[i] then
 			s = s.."nn"
 		else
