@@ -459,6 +459,24 @@ function PallyPowerConfigGrid_Update()
 					getglobal(fname.."ASkill"..id):Hide()
 				end
 			end
+
+			-- When we know the unit has Sanctity Aura, replace Blessing of Light rank+talent display.
+			local light = 5
+			local sanctity = 8
+			getglobal(fname.."ASkill"..sanctity):Hide() -- start hidden in case we dont have sanctity
+			getglobal(fname.."AIcon"..sanctity):Hide()
+			if AuraInfo[sanctity] and not AuraInfo[sanctity] == "" then
+				getglobal(fname.."Icon"..light):Hide() -- hide blessing of light
+				getglobal(fname.."Skill"..light):Hide()
+				getglobal(fname.."AIcon"..sanctity):Show() -- show sanctity aura
+				getglobal(fname.."ASkill"..sanctity):Show()
+				local txt = AuraInfo[sanctity].rank
+				if AuraInfo[sanctity].talent and (AuraInfo[sanctity].talent + 0 > 0) then
+					txt = txt .. "+" .. AuraInfo[sanctity].talent
+				end
+				getglobal(fname.."ASkill"..sanctity):SetText(txt)
+			end
+
 			
 			local aura = PallyPower_AuraAssignments[name]
 			if ( aura and aura > 0 ) then
@@ -771,8 +789,18 @@ function PallyPower:ScanSpells()
 			if not spellName then -- fallback to lower blessings
 				spellName, spellRank = GetSpellInfo(PallyPower.Spells[i])
 			end
-			if not spellRank or spellRank == "" then -- spells without ranks
-				spellRank = "1"		 -- BoK and BoS
+			if not spellRank or spellRank == "" then -- spells without ranks BoK, Salv in TBC, Sanc in WotLK)
+				local spellKnown
+				if i == 3 then -- blessing of kings
+					spellKnown = IsSpellKnown(20217)
+				elseif i == 6 then -- blessing of salvation
+					spellKnown = IsSpellKnown(1038)
+				end
+				if spellKnown then
+					spellRank = "Rank 1"
+				else
+					spellRank = "0"
+				end
 			end
 			local rank = select(3, sfind(spellRank, "(%d+)"))
 			local talent = 0
@@ -784,10 +812,6 @@ function PallyPower:ScanSpells()
 					talent = talent + select(5, GetTalentInfo(1, 10))
 				elseif i == 2 then -- might
 			    	talent = talent + select(5, GetTalentInfo(3, 1))
-			    elseif i == 3 then -- kings
-			    	talent = talent + select(5, GetTalentInfo(2, 6))
-				elseif i == 4 then -- sanctuary
-					talent = talent + select(5, GetTalentInfo(2, 14))
 				end
 
 				RankInfo[i].talent = talent
@@ -805,7 +829,19 @@ function PallyPower:ScanSpells()
 				AllPallys[self.player].AuraInfo[i] = {}
 				
 				if not spellRank or spellRank == "" then -- spells without ranks
-					spellRank = "1"		 -- Concentration, Crusader, Sanctity
+					local spellKnown
+					if i == 3 then -- concentration aura
+						spellKnown = IsSpellKnown(19746)
+					elseif i == 7 then -- crusader aura
+						spellKnown = IsSpellKnown(32223)
+					elseif i == 8 then -- sanctity aura
+						spellKnown = IsSpellKnown(20218)
+					end
+					if spellKnown then
+						spellRank = "Rank 1"
+					else
+						spellRank = "0"
+					end
 				end
 				
 				local talent = 0

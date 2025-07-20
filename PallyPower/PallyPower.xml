@@ -1001,7 +1001,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				    </Anchor>
 			    </Anchors>
 		    </Texture>
-			<Texture file="Interface\Icons\Spell_Holy_GreaterBlessingofSalvation" name="$parentIcon5">
+			<Texture file="Interface\Icons\Spell_Holy_PrayerOfHealing02" name="$parentIcon5">
 			    <Size>
 				    <AbsDimension x="16" y="16" /> 
 			    </Size>
@@ -1013,7 +1013,7 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				    </Anchor>
 			    </Anchors>
 		    </Texture>
-			<Texture file="Interface\Icons\Spell_Holy_MindVision" name="$parentIcon6">
+			<Texture file="Interface\Icons\Spell_Holy_GreaterBlessingofSalvation" name="$parentIcon6">
 			    <Size>
 				    <AbsDimension x="16" y="16" /> 
 			    </Size>
@@ -1061,6 +1061,18 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 				</Anchor>
 			</Anchors>
 			</Texture>
+			<Texture file="Interface\Icons\Spell_Holy_MindVision" name="$parentAIcon8">
+				<Size>
+					<AbsDimension x="16" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentIcon4">
+					<Offset>
+						<AbsDimension x="45" y="0" />
+					</Offset>
+					</Anchor>
+				</Anchors>
+				</Texture>
 			<Texture name="$parentLine1" file="Interface\Tooltips\UI-Tooltip-Background" hidden="false">
 			<Size>
 			<AbsDimension x="1150" y="2" /> 
@@ -1258,36 +1270,44 @@ C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
 			    </Anchors>
 		    </FontString>
 			<FontString name="$parentSkill6" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-			<Size>
-				<AbsDimension x="30" y="16" />
-			</Size>
-			<Anchors>
-				<Anchor point="TOPLEFT" relativeTo="$parentIcon6" relativePoint="TOPRIGHT" />
-			</Anchors>
+				<Size>
+					<AbsDimension x="30" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentIcon6" relativePoint="TOPRIGHT" />
+				</Anchors>
 			</FontString>
 			<FontString name="$parentASkill1" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-			<Size>
-				<AbsDimension x="30" y="16" />
-			</Size>
-			<Anchors>
-				<Anchor point="TOPLEFT" relativeTo="$parentAIcon1" relativePoint="TOPRIGHT" />
-			</Anchors>
+				<Size>
+					<AbsDimension x="30" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentAIcon1" relativePoint="TOPRIGHT" />
+				</Anchors>
 			</FontString>
 			<FontString name="$parentASkill2" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-			<Size>
-				<AbsDimension x="30" y="16" />
-			</Size>
-			<Anchors>
-				<Anchor point="TOPLEFT" relativeTo="$parentAIcon2" relativePoint="TOPRIGHT" />
-			</Anchors>
+				<Size>
+					<AbsDimension x="30" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentAIcon2" relativePoint="TOPRIGHT" />
+				</Anchors>
 			</FontString>
 			<FontString name="$parentASkill3" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
-			<Size>
-				<AbsDimension x="30" y="16" />
-			</Size>
-			<Anchors>
-				<Anchor point="TOPLEFT" relativeTo="$parentAIcon3" relativePoint="TOPRIGHT" />
-			</Anchors>
+				<Size>
+					<AbsDimension x="30" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentAIcon3" relativePoint="TOPRIGHT" />
+				</Anchors>
+			</FontString>
+			<FontString name="$parentASkill8" inherits="GameFontNormalSmall" text="0/0" justifyH="LEFT">
+				<Size>
+					<AbsDimension x="30" y="16" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentAIcon8" relativePoint="TOPRIGHT" />
+				</Anchors>
 			</FontString>
       	</Layer>
    	</Layers>
