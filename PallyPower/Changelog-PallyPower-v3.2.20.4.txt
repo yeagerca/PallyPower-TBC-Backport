@@ -1,3 +1,9 @@
+2025-07-20 v3.2.20.4
+Rearrange player rank and talent icons.
+Row 2 will be Sanctuary, Light, and Salvation, but Sanctity will replace Light when available.
+Cleaned up rank and talent numbers to be most accurate.
+- Gnomechewer, Warmane Onyxia
+
 2025-07-19 v3.2.20.3
 Add rank and talent icons for Sanctuary, Salvation, and Sanctity in player information display slots 4, 5, and 6.
 - Gnomechewer, Warmane Onyxia
